@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Assessment 2</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="header">
+        <div id="logo"> LOGO </div>
+        <div id="menuOptions">
+          <ul>
+            <li> HOME </li>
+            <li> ASSESSMENTS </li>
+            <li> CONTACT US </li>
+            <li> LOGOUT </li>
+            <div id="verticalRule"></div>
+            <li> Username </li>
+          </ul>
+        </div>
+      </div>
+      <div id="bodyContainer">
+        <div id="backgroundUIContainer">
+          <div id="divA">
+            <div id="controlsA">
+              <div id="shwBtn">Show</div>
+              <select id="units">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <div id="entriesBtn">Entries</div>
+            </div>
+            <div id="controlsB">
+              <input type="text" id="searchInput" placeholder="Type for search">
+            </div>
+          </div>
+        </div>
+        <div id="contentContainer">
+          <div id="listView2">
+            <div id="partA">
+              <span id="status"> JSON A Input </span>
+              <textarea rows="50" cols="50" id="jsona">
+                {
+                  "a":1,
+                  "b":1
+                }
+              </textarea>
+            </div>
+            <div id="partB">
+              <span id="status"> JSON B Input </span>
+              <textarea rows="50" cols="50" id="jsonb">
+                {
+                  "b":1,
+                  "c":1
+                }
+              </textarea>
+            </div>
+          </div>
+          <div class="compareBtnCss">
+            <div class="btnCompare accept" onclick="compareJson()">Compare</div>
+          </div>
+          <div class="outputTable">
+            <table>
+              <tr>
+                <th>JSON A</th>
+                <th>JSON B</th>
+                <th>DIFF</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function compareJson() {
+        console.log(JSON.parse(document.getElementById('jsona').value.trim(' ')));
+        console.log(JSON.parse(document.getElementById('jsonb').value.trim(' ')));
+        console.log(Object.equals(JSON.parse(document.getElementById('jsona').value.trim(' ')), JSON.parse(document.getElementById('jsonb').value.trim(' '))))
+
+      }
+    </script>
+  </body>
+</html>

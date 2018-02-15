@@ -1,0 +1,264 @@
+body, html{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    background-color: #E8F6FE;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  background-color: #004E77;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px 10px 10px 30px;
+  font-style: italic;
+  margin: auto 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0px;
+}
+
+li {
+  font-size: 12px;
+  padding: 20px 30px 20px 10px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+#verticalRule {
+  border: 0.5px solid #3e3c3c;
+      margin-right: 17px;
+}
+
+#bodyContainer {
+  height: 100%;
+  position: relative;
+}
+
+#backgroundUIContainer {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#contentContainer {
+  height: 100%;
+  width: 95%;
+  position: absolute;
+  top: 100px;
+  background-color: #FFFFFF;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+#controlsA {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  width: 20%;
+}
+
+#controlsB {
+      width: 29%;
+}
+
+#divA {
+  display: flex;
+  order: 1;
+  flex: 1 0px;
+  background-color: #44ACCF;
+  justify-content: space-between;
+      padding: 3%;
+}
+
+#divB {
+  order: 2;
+  flex: 2;
+  background-color: #E8F6FE;
+}
+
+#shwBtn {
+  padding: 5px 10px 5px 10px;
+  background-color: #FFFFFF;
+  color: #75A8C5;
+  margin: auto 0;
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+#units {
+  margin-right: 10px;
+  color: #75A8C5;
+  font-weight: bold;
+}
+
+#entriesBtn {
+  padding: 5px 10px 5px 10px;
+  background-color: #FFFFFF;
+  color: #75A8C5;
+  margin: auto 0;
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+#searchInput {
+  padding: 5px 15px 5px 0px;
+  width: 95%;
+}
+
+::placeholder {
+  color: #75A8C5;
+  padding: 5px 15px 5px 15px;
+  font-weight: bold;
+}
+
+#listView {
+  height: 15%;
+  background-color: #FFFFFF;
+  padding: 30px 15px 30px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #eae5e5;
+}
+
+#listView2 {
+  background-color: #FFFFFF;
+  padding: 30px 15px 30px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #eae5e5;
+}
+
+#partA {
+  display: flex;
+  flex-direction: column;
+}
+
+#partB {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+#topicTitle {
+  color: #75A8C5;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#infoDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#status {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#lastC {
+  font-size: 12px;
+}
+
+#lastUA {
+  font-size: 12px;
+}
+
+#buttonGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  margin-right: 2px;
+  border-radius: 5%;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 15px 8px 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.accept {
+  background-color: #63A844;
+}
+
+.reject {
+  background-color: #AA4F25;
+}
+
+.open {
+  background-color: #DA8B29;
+}
+
+.sbmt {
+  background-color: #0578A0;
+}
+
+.btnCompare, .btnControl {
+  margin-right: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 15px 8px 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.compareBtnCss, .controlBtnCss {
+  display: flex;
+  justify-content: center;
+}
+
+.mainTable {
+  border: 1px solid #F4F4F4;
+  width:100%;
+  table-layout: fixed;
+}
+
+th {
+  text-align: left;
+  border-right: 1px solid #F4F4F4;
+  border-bottom: 1px solid #F4F4F4;
+  font-size: 14px;
+  padding: 6px;
+}
+
+td {
+  font-size: 14px;
+  padding: 6px;
+  text-overflow: ellipsis; /* Format the text in cell so if the */
+  word-break: break-word;  /* text string is too long, shows an ellipsis i.e. break and wrap the flow to next line.*/
+  overflow: hidden;
+}
+
+tr:nth-child(even) {
+    background-color: #DDDDDD;
+}
